@@ -13,7 +13,7 @@
 * 私有maven仓库
     * 修改pom.xml文件中的`distributionManagement`为私有maven仓库地址
     * 部署
-        ```shell
+        ```
             mvn deploy -Dmaven.test.skip
         ```
 
