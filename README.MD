@@ -2,17 +2,21 @@
 =========================
 
 ## 使用方法
+
 ### 打包发布
+
 * 本地maven仓库
 ```shell
     mvn clean && mvn install -Dmaven.test.skip
 ```
+
 * 私有maven仓库
     * 修改pom.xml文件中的`distributionManagement`为私有maven仓库地址
     * 部署
         ```shell
             mvn deploy -Dmaven.test.skip
         ```
+
 ### 在项目中引入如下依赖
 ```xml
      <dependency>
@@ -21,6 +25,7 @@
       <version>1.0</version>
     </dependency>
 ```
+
 ### 在项目中配置oss
 ```
 oss:
